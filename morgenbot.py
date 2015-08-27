@@ -16,10 +16,10 @@ app = Flask(__name__)
 curdir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(curdir)
 
-slack = Slacker('qVAYF6M7oPo0b94hBAukX2W1')
+slack = Slacker('oCUD479N1IlzkII1pk0Jd1zY')
 username = os.getenv('USERNAME', 'morgenbot')
 icon_emoji = os.getenv('ICON_EMOJI', ':coffee:')
-channel = os.getenv('CHANNEL', '#enterprise')
+channel = os.getenv('CHANNEL', '#test')
 ignore_users = os.getenv('IGNORE_USERS', '[]')
 
 init_greeting = os.getenv('INIT_GREETING', 'Good morning!')
